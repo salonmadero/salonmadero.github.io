@@ -51,7 +51,7 @@ Typography
 ============================================
 */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     color: #333;
@@ -70,43 +70,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2rem;
-    color: #ddb4a2;
+    font-size: 3rem;
+    color: white;
 }
 
 h2 {
     font-size: 1.75rem;
-    color: #ddb4a2;
     margin-bottom: 2rem;
 }
 
-h2 span {
-    padding-left: 30px;
-}
-
 h3 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: white;
     font-weight: 300;
 }
 a {
     transition:
-        color 0.15s ease-in-out;
+        all 0.15s ease-in-out;
 }
 
 a:hover, a:focus, a:active {
-    color: #a57f6e;
+    color: #F2B5D4;
     text-decoration: none;
     outline: 0;
+    font-weight: bold;
 }
 a:hover:after, a:focus:after, a:active:after {
-    background: #a57f6e;
+    background: #F2B5D4;
     outline: none;
 }
 
 .btn {
     margin-top: 2rem;
-    background: #ddb4a2;
+    background: #7BDFF2;
     color: white;
     padding: 12px 20px;
     font-weight: bold;
@@ -120,7 +116,7 @@ a:hover:after, a:focus:after, a:active:after {
 }
 
 .btn:hover, .btn:focus, .btn:active {
-    background-color: #A57F6E;
+    background-color: #F7D6E0;
     color: white;
     text-decoration: none;
     outline: 0;
@@ -139,7 +135,7 @@ section:focus {
     outline: none;
 }
 
-.service-item {
+.service-item div {
     margin-bottom: 30px;
     margin-top: 13px;
 }
@@ -150,10 +146,8 @@ section:focus {
     }
 }
 
-.c-backgroung {
-    background-image:
-        linear-gradient(to right,
-        black, rgba(0, 0, 0, 0.6));
+.c-background {
+    background-color: #EFF7F6;
 }
 
 /*
@@ -161,7 +155,14 @@ Project specifics
 ============================================
 */
 /*  navigation */
+@media only screen and (min-width: 992px) {
+    nav {
+        height: 15vh;
+    }
+}
+
 nav a {
+    font-weight: bold;
     color: white;
     transition:
         color 0.15s ease-in-out;
@@ -237,7 +238,7 @@ nav .btn {
 
 
 .shrink {
-    background-image: linear-gradient(15deg, #ddb4a2 0%, #a2cbdd 100%);
+    background-color: rgba(255,255,255, 0.9);
 }
 
 nav.shrink a {
@@ -245,7 +246,7 @@ nav.shrink a {
 }
 
 .shrink a:hover {
-    color: #a57f6e;
+    color: #F2B5D4;
 }
 
 .shrink .btn {
@@ -333,50 +334,15 @@ nav.shrink a {
 }
 
 
-/* images animation */
-.anim {
-    visibility: hidden;
-}
-
-.scale-up-center {
-    visibility: visible;
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-@-webkit-keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 /*  intro */
 #intro {
     height: 100vh;
     min-height: 590px;
-    background-image: url("images/intro_m.jpg");
-    background-image:
+    background-image: url("images/madero.jpg")!important;
+    background-image-image:
         linear-gradient(to right,
-        black, rgba(0, 0, 0, 0.6)),
-        url("images/intro_xs.jpg");
+        white, rgba(0, 0, 0, 0.6)),
+        url("images/intro_xs.jpg")!important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -386,7 +352,7 @@ nav.shrink a {
     #intro {
         background-image:
             linear-gradient(to right,
-            black, rgba(0, 0, 0, 0.6)),
+            white, rgba(0, 0, 0, 0.6)),
             url("images/intro_sm.jpg");
     }
 }
@@ -395,7 +361,7 @@ nav.shrink a {
     #intro {
         background-image:
             linear-gradient(to right,
-            black, rgba(0, 0, 0, 0.6)),
+            white, rgba(0, 0, 0, 0.6)),
             url("images/intro_m.jpg");
     }
 }
@@ -404,7 +370,7 @@ nav.shrink a {
     #intro {
         background-image:
             linear-gradient(to right,
-            black, rgba(0, 0, 0, 0.6)),
+            white, rgba(0, 0, 0, 0.6)),
             url("images/intro_l.jpg");
     }
 }
@@ -413,21 +379,97 @@ nav.shrink a {
     #intro {
         background-image:
             linear-gradient(to right,
-            black, rgba(0, 0, 0, 0.6)),
+            white, rgba(0, 0, 0, 0.6)),
             url("images/intro_xl.jpg");
     }
 }
 
 #intro .container {
-    padding-top: 60vh;
+    padding-top: 20vh;
     padding-bottom: 1rem;
-    color: white;
 }
 
-.img-profile {
-    border: 4px solid #a2cbdd;
+/* orders */
+a.order {
+    color: #333;
 }
 
+a.order:hover {
+    font-weight: 400;
+    color: #F2B5D4;
+}
+
+.order i {
+    font-size: 2rem;
+}
+
+.order p {
+    display: inline;
+    position: relative;
+    top: -4px;
+    padding-left: 7px;
+}
+
+
+@media only screen and (min-width: 992px) {
+    #orders .lead {
+        position: relative;
+        top: 4px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #orders {
+        text-align: center;
+    }
+
+    a.order {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+/* services */
+.services-heading {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+.service-item p {
+    text-align: center;
+}
+
+.service-item img {
+    border: 14px solid #B2F7EF;
+    transition: all .2s ease-in-out;
+}
+
+#sluzby .col-lg-4:nth-child(2) img {
+    border-color: #F2B5D4;
+}
+
+#sluzby .col-lg-4:nth-child(3) img {
+    border-color: #7BDFF2;
+}
+
+.service-item:hover img {
+    transform: scale(1.1);
+}
+
+
+@media only screen and (min-width: 992px) {
+    .service-item img {
+        max-width: 200px;
+    }
+}
+
+
+/* about */
 @media only screen and (max-width: 767px) {
     .img-profile {
         margin: 0 auto 3rem;
@@ -438,81 +480,13 @@ nav.shrink a {
     }
 }
 
-/* services */
-.c-white {
-    color: white;
-}
-
-.hr {
-    border-bottom: 1px solid #ddb4a2;
-    display: block;
-    width: 30px;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
-.services-heading {
-    text-align: center;
-    color: #ddb4a2;
-    font-size: 25px;
-    margin-top: 30px;
-    padding-bottom: 10px;
-    font-weight: 400;
-}
-
-.service-item p {
-    text-align: center;
-}
-
-.service-item img {
-    border: 4px solid #ddb4a2;
-}
-
-@media only screen and (min-width: 992px) {
-    .service-item img {
-        max-width: 200px;
-    }
-}
-
-/* pricing */
-.price-mainheading {
-    color: #ddb4a2;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.price-heading {
-    color: #a2cbdd;
-}
-
-.description {
-    font-size: 0.9rem;
-    width: 85%;
-    padding-top: 13px;
-    margin-bottom: 27px;
-}
-
-.price-item {
-    position: absolute;
-    right: 15px;
-    color: #333;
-    display: inline;
-}
-
-.note {
-    font-size: 0.9rem;
-    font-weight: 100;
-    font-style: italic;
-    margin-top: 1rem;
-}
-
 /* contact */
 #kontakt {
-    background-image: url("images/backgr_m.jpg");
+    background-image: url("images/katka.jpg")!important;
     background-image:
         linear-gradient(to left,
-        black, rgba(0, 0, 0, 0.6)),
-        url("images/backgr_xs.jpg");
+        white, rgba(0, 0, 0, 0.6)),
+        url("images/katka.jpg")!important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -522,7 +496,7 @@ nav.shrink a {
     #kontakt {
         background-image:
             linear-gradient(to left,
-            black, rgba(0, 0, 0, 0.6)),
+            white, rgba(0, 0, 0, 0.6)),
             url("images/backgr_sm.jpg");
     }
 }
@@ -531,7 +505,7 @@ nav.shrink a {
     #kontakt {
         background-image:
             linear-gradient(to left,
-            black, rgba(0, 0, 0, 0.6)),
+            white, rgba(0, 0, 0, 0.6)),
             url("images/backgr_m.jpg");
     }
 }
@@ -540,7 +514,7 @@ nav.shrink a {
     #kontakt {
         background-image:
             linear-gradient(to left,
-            black, rgba(0, 0, 0, 0.6)),
+            white, rgba(0, 0, 0, 0.6)),
             url("images/backgr_l.jpg");
     }
 }
@@ -549,43 +523,66 @@ nav.shrink a {
     #kontakt {
         background-image:
             linear-gradient(to left,
-            black, rgba(0, 0, 0, 0.6)),
+            white, rgba(0, 0, 0, 0.6)),
             url("images/backgr_xl.jpg");
     }
 }
 
 address {
-    color: white;
     font-size: 1.2rem;
 }
 
-address p {
-    padding-bottom: 2rem;
-}
-
 address a {
+    display: block;
     position: relative;
     color: inherit;
     z-index: 1;
+    padding-bottom: 2rem;
+    padding-left: 50px;
 }
 
-address i {
-    width: 30px;
-}
 
-address a:after {
-    /* height: 1px; */
-    content: '';
-    width: calc(100% - 34px);
-    background: #ddb4a2;
+address i.fa {
     position: absolute;
-    left: 34px;
-    bottom: 2px;
-    z-index: -1;
+    left: 0px;
+    bottom: 20px;
+    font-size: 3rem;
+}
+
+i.fa.fa-compass {
+    bottom: 46px;
+}
+
+i.fa.fa-mobile {
+    left: 10px;
+}
+
+.follow .fa {
+    color: #333;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.follow .fa:hover {
+    color: #F2B5D4;
+}
+
+
+@media only screen and (max-width: 767px) {
+    address {
+        text-align: center;
+    }
+
+    address a {
+        padding-left: 0;
+    }
+
+    address i.fa {
+        display: none;
+    }
 }
 
 footer {
-    background-image: linear-gradient(15deg, #a2cbdd 0%, #ddb4a2 100%);
     padding: 1rem 0;
 }
 
@@ -604,3 +601,60 @@ footer {
         content: "Šetřme naši přírodu - nastavení neumožní přímo z prohlížeče vytisknout více než kontaktní údaje.";
     } */
 }
+
+
+/* pricing */
+.price-content {
+    margin-bottom: 20px;
+}
+
+.price-mainheading {
+    font-size: 1.2rem;
+}
+
+.price-heading {
+    color: #F2B5D4;
+}
+
+.price-item {
+    position: absolute;
+    right: 15px;
+    color: #333;
+    display: inline;
+}
+
+@media only screen and (max-width: 425px) {
+    .price-heading {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .price-content {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price-heading {
+        position: relative;
+
+    }
+}
+
+
+
+.card {
+    webkit-box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+.card-title {
+    color: #333;
+    margin-bottom: 0;
+}
+
+.carousel-item a:hover .card-title {
+     color: #F2B5D4;
+}
+
