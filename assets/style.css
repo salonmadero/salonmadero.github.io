@@ -90,8 +90,13 @@ h4 {
     font-size: 1.25rem;
 }
 
+h5 {
+    font-style: italic;
+}
+
 em {
     font-style: italic;
+    color: #58D5EE;
 }
 
 p {
@@ -99,6 +104,7 @@ p {
 }
 
 a {
+    color: #333;
     transition:
         all 0.15s ease-in-out;
 }
@@ -136,10 +142,45 @@ a:hover:after, a:focus:after, a:active:after {
     box-shadow: none;
 }
 
+.font-light {
+    font-weight: 100;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
 /*
 Layout
 ============================================
 */
+.pb-15 {
+    padding-bottom: 15px;
+}
+@media only screen and (max-width: 991px) {
+
+.gallery-pb {
+    padding-bottom: 15px;
+}
+}
+
+.mb-3rem {
+    margin-bottom: 3rem;
+}
+@media only screen and (max-width: 575px) {
+
+.mb-sm {
+    margin-bottom: 3rem;
+}
+}
+
+@media only screen and (max-width: 767px) {
+
+.mb-md {
+    margin-bottom: 3rem;
+}
+}
+
 section {
     padding: 5em 0;
 }
@@ -173,6 +214,18 @@ section:focus {
 
 .green-back {
     background-color: #D6F7ED;
+}
+
+.pink-border {
+    border-left: 5px solid #ED97C2;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    .pink-border {
+        margin-left: 15px;
+    }
 }
 
 /*
@@ -361,11 +414,12 @@ nav.shrink a {
 /*  intro */
 #intro {
     height: 100vh;
-    min-height: 590px;
+    min-height: 560px;
     background-image: url("images/madero.jpg");
    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 #intro:before {
@@ -378,6 +432,7 @@ nav.shrink a {
       bottom: 0px;
       left: 0px;
       opacity: 0.75;
+      min-height: 560px;
 
 }
 /*
@@ -418,7 +473,7 @@ nav.shrink a {
 }
 */
 
-#intro .container {
+#intro > .container {
     padding-top: 30vh;
     padding-bottom: 1rem;
     position: relative;
@@ -483,11 +538,11 @@ a.order:hover {
     transition: all .2s ease-in-out;
 }
 
-#sluzby .col-lg-4:nth-child(2) img {
+#sluzby .col-md-4:nth-child(2) img {
     border-color: #F7D6E0;
 }
 
-#sluzby .col-lg-4:nth-child(3) img {
+#sluzby .col-md-4:nth-child(3) img {
     border-color: #D6F7ED;
 }
 
@@ -495,12 +550,10 @@ a.order:hover {
     transform: scale(1.1);
 }
 
-
-@media only screen and (min-width: 992px) {
     .service-item img {
         max-width: 200px;
     }
-}
+
 
 
 /* about */
@@ -526,7 +579,11 @@ address a {
     padding-bottom: 2rem;
 }
 
-address a:hover {
+address a:hover, address a:active, address a:focus {
+    color: #333;
+}
+
+address a:hover .hover-address, address a.phone:hover {
     color: white;
     font-weight: bold;
 }
@@ -598,6 +655,7 @@ footer {
 
 .price-heading {
     color: #333;
+    position: relative;
 }
 
 .price-item {
@@ -631,20 +689,72 @@ footer {
 .card {
     webkit-box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    border: 0;
+    height: 100%;
 }
 
-.card.types {
-    margin: 2rem auto 4rem;
-}
-
-@media only screen and (max-width: 560px) {
-    .card.types {
-        margin: auto;
-    }
-}
-
-.carousel-item a:hover .card-title {
+.gallery a:hover .card-title {
      color: #ED97C2;
+     font-weight: bold;
+}
+
+.gallery .card-img-top {
+    height: 100%;
+}
+
+.gallery .card .path-photo {
+    height: 200px;
+        background-image: url("images/path.jpg");
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery .card .madero-photo {
+    height: 200px;
+        background-image: url("images/madero.jpg");
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery .card .salon-photo {
+    height: 200px;
+        background-image: url("images/salon.jpg");
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery .card .wraps-photo {
+    height: 200px;
+        background-image: url("images/zabaly.jpg");
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 992px){
+
+.gallery .card .path-photo {
+    height: 100px;
+}
+
+.gallery .card .madero-photo {
+    height: 200px;
+}
+
+.gallery .card .salon-photo {
+    height: 381px;
+}
+
+.gallery .card .wraps-photo {
+    height: 100px;
+}
+}
+
+.gallery .card-title {
+    margin: 0;
 }
 
 /* about */
@@ -675,15 +785,33 @@ footer {
     margin-left: 17px;
 }
 
-h5 {
-    font-style: italic;
+
+.photo {
+    min-width: 200px;
+    min-height: 100px;
+    background: grey;
+    margin: 1rem;
 }
 
-.mb-4rem {
-    margin-bottom: 4rem;
+.subpage {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 5em 0;
 }
 
-.list-border {
-    border-left: 5px solid #ED97C2;
-    padding-left: 15px;
+@media only screen and (max-width: 767px) {
+.subpage {
+    padding: 2em 0;
+}
+
+#intro.subpage-intro > .container {
+    padding-top: 8%;
+}
+}
+
+
+.wraps-resolve {
+    height: auto;
+    width: fit-content;
 }
