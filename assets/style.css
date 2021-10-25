@@ -237,18 +237,6 @@ Project specifics
 
 nav a {
     color: #333;
-    transition:
-        color 0.15s ease-in-out;
-}
-
-svg {
-    transition: 0.4s;
-}
-
-.logo {
-    fill: white;
-    stroke:white;
-    stroke-width:0.2mm;
 }
 
 nav .btn {
@@ -312,6 +300,7 @@ nav .btn {
 
 .shrink {
     background-color: rgba(255,255,255, 0.9);
+    border-bottom: 1px solid #F7D6E0;
 }
 
 nav.shrink a {
@@ -525,6 +514,8 @@ a.order:hover {
     font-weight: 300;
 }
 
+
+
 .service-item p {
     text-align: center;
 }
@@ -550,12 +541,16 @@ a.order:hover {
         max-width: 200px;
     }
 
+.service-item:hover .services-heading {
+    font-weight: 400;
+}
 
 
 /* about */
 @media only screen and (max-width: 767px) {
     .img-profile {
         margin: 0 auto 3rem;
+        max-width: 350px;
     }
 
     .txt-profile {
@@ -637,12 +632,13 @@ footer {
 
 /* pricing */
 .price-content {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .price-mainheading {
-    font-size: 1.2rem;
+    font-size: 1.75rem;
     color: #ED97C2;
+
 }
 
 .price-content:nth-child(2n) .price-mainheading {
@@ -652,6 +648,7 @@ footer {
 .price-heading {
     color: #333;
     position: relative;
+    padding-top: 20px;
 }
 
 .price-item {
@@ -784,8 +781,8 @@ footer {
 
 .photo {
     min-width: 200px;
-    min-height: 100px;
-    background: grey;
+    min-height: 200px;
+    background: #dee2e6;
     margin: 1rem;
 }
 
@@ -811,4 +808,30 @@ footer {
     height: auto;
     width: fit-content;
     margin: auto;
+}
+
+.navbar-brand {
+    font-family: 'Marcellus', sans-serif;
+    transition: none;
+}
+
+
+.brand-black, .brand-pink {
+    max-height: 50px;
+}
+
+.brand-black {
+    display: inline-block;
+}
+
+.brand-pink {
+    display: none;
+}
+
+.navbar-brand:hover .brand-black {
+    display: none;
+}
+
+.navbar-brand:hover .brand-pink {
+    display: inline-block;
 }
