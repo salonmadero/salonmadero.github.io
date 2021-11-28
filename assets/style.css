@@ -70,7 +70,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2 {
@@ -443,7 +443,7 @@ nav.shrink a {
 #intro {
     height: 100vh;
     min-height: 560px;
-    background-image: url("images/madero.jpg");
+    background-image: url("images/intro_m.jpg");
    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -453,8 +453,7 @@ nav.shrink a {
 #intro:before {
     content: "";
      background-color: rgba(255,255,255, 0.85);
-
-          position: absolute;
+      position: absolute;
       top: 0px;
       right: 0px;
       bottom: 0px;
@@ -463,31 +462,22 @@ nav.shrink a {
       min-height: 560px;
 
 }
-/*
+
 @media only screen and (min-width: 600px) {
     #intro {
-        background-image:
-            linear-gradient(to right,
-            white, rgba(0, 0, 0, 0.6)),
-            url("images/intro_sm.jpg");
+        background-image: url("images/intro_sm.jpg");
     }
 }
 
 @media only screen and (min-width: 900px) {
     #intro {
-        background-image:
-            linear-gradient(to right,
-            white, rgba(0, 0, 0, 0.6)),
-            url("images/intro_m.jpg");
+        background-image: url("images/intro_m.jpg");
     }
 }
 
 @media only screen and (min-width: 1200px) {
     #intro {
-        background-image:
-            linear-gradient(to right,
-            white, rgba(0, 0, 0, 0.6)),
-            url("images/intro_l.jpg");
+        background-image: url("images/intro_l.jpg");
     }
 }
 
@@ -499,7 +489,6 @@ nav.shrink a {
             url("images/intro_xl.jpg");
     }
 }
-*/
 
 #intro > .container {
     padding-top: 30vh;
@@ -599,7 +588,7 @@ a.order:hover {
 
 .gallery .card .path-photo {
     height: 200px;
-    background-image: url("images/path.jpg");
+    background-image: url("images/promeny/promeny4.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -607,7 +596,7 @@ a.order:hover {
 
 .gallery .card .madero-photo {
     height: 200px;
-    background-image: url("images/madero.jpg");
+    background-image: url("images/telo/telo7.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -615,7 +604,7 @@ a.order:hover {
 
 .gallery .card .salon-photo {
     height: 200px;
-    background-image: url("images/salon.jpg");
+    background-image: url("images/salon/salon4.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -623,7 +612,7 @@ a.order:hover {
 
 .gallery .card .wraps-photo {
     height: 200px;
-    background-image: url("images/zabaly.jpg");
+    background-image: url("images/zabaly/zabaly5.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -737,7 +726,7 @@ footer {
 .price-content {
     margin-bottom: 100px;
 }
-
+/*
 .price-mainheading {
     font-size: 1.75rem;
     color: #ED97C2;
@@ -745,6 +734,15 @@ footer {
 
 .price-content:nth-child(2n) .price-mainheading {
     color: #58D5EE;
+}
+*/
+
+.price-mainheading {
+    font-size: 1.75rem;
+}
+
+.price-mainheading .border-bottom {
+    border-bottom-color: #333!important;
 }
 
 .price-heading {
@@ -786,13 +784,12 @@ footer {
 
 
 /* gallery subpage */
-.photo {
-    min-width: 200px;
-    min-height: 200px;
+.photo img {
+    max-width: 400px;
+    max-height: 400px;
     background: #dee2e6;
     margin: 1rem;
 }
-
 
 /* services subpage */
 .wraps-resolve {

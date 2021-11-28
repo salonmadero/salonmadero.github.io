@@ -13,10 +13,13 @@ title: Galerie
     <div class="container">
         <h2>Maderoterapie těla</h2>
         <div class="row">
-            <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
+            {% for image in site.static_files %}
+                {% if image.path contains 'images/telo' %}
+                    <div class="col"><div class="photo">
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div></div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -25,10 +28,13 @@ title: Galerie
     <div class="container">
         <h2>Maderoterapie obličeje</h2>
         <div class="row">
-            <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
+            {% for image in site.static_files %}
+                {% if image.path contains 'images/oblicej' %}
+                    <div class="col"><div class="photo">
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div></div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -37,10 +43,13 @@ title: Galerie
     <div class="container">
         <h2>Proměny</h2>
         <div class="row">
-            <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
+            {% for image in site.static_files %}
+                {% if image.path contains 'images/promeny' %}
+                    <div class="col"><div class="photo">
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div></div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -49,10 +58,13 @@ title: Galerie
     <div class="container">
         <h2>Zábaly</h2>
         <div class="row">
-            <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
+            {% for image in site.static_files %}
+                {% if image.path contains 'images/zabaly' %}
+                    <div class="col"><div class="photo">
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div></div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -61,10 +73,13 @@ title: Galerie
     <div class="container">
         <h2>Salon</h2>
         <div class="row">
-            <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
-             <div class="col"><div class="photo"></div></div>
+            {% for image in site.static_files %}
+                {% if image.path contains 'images/salon' %}
+                    <div class="col"><div class="photo">
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div></div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
