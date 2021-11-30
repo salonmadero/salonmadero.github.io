@@ -447,29 +447,16 @@ nav.shrink a {
 #intro {
     height: 100vh;
     min-height: 560px;
-    background-image: url("images/intro2.jpg");
-   background-size: cover;
+    background-image: url("images/intro_xs.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
 
-
-
-#intro.sluzby {
-    background-image: url("images/intro3.jpg");
-}
-
-#intro.galerie {
-    background-image: url("images/intro4.jpg");
-}
-
 #intro.omne {
-    background-image: url("images/intro_l.jpg");
-}
-
-#intro.cenik {
-    background-image: url("images/intro5.jpg");
+    background-image: url("images/intro_katka.jpg");
+    background-position: top;
 }
 
 #intro:before {
@@ -485,7 +472,6 @@ nav.shrink a {
 
 }
 
-/*
 @media only screen and (min-width: 600px) {
     #intro {
         background-image: url("images/intro_sm.jpg");
@@ -509,7 +495,6 @@ nav.shrink a {
         background-image: url("images/intro_xl.jpg");
     }
 }
-*/
 
 #intro > .container {
     padding-top: 30vh;
@@ -617,7 +602,7 @@ a.order:hover {
 
 .gallery .card .madero-photo {
     height: 200px;
-    background-image: url("images/telo/telo7.jpg");
+    background-image: url("images/set.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -700,10 +685,16 @@ address i.fa {
     padding-right: 10px;
 }
 
+@media only screen and (max-width: 767px) {
+    .social {
+        margin-top: 3rem;
+    }
+}
+
 .follow .fa {
     color: #333;
     font-size: 3rem;
-    padding: 20px 20px 0;
+    padding: 10px 20px 0;
 }
 
 .follow a:hover, .follow a:hover .fa {
@@ -797,6 +788,7 @@ footer a {
 @media only screen and (max-width: 425px) {
     .price-heading {
         max-width: 250px;
+        margin: auto;
     }
 }
 

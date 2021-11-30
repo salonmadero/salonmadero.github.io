@@ -13,13 +13,38 @@ title: Galerie
     <div class="container">
         <h2>Maderoterapie těla</h2>
         <div class="row">
-            {% for image in site.static_files %}
-                {% if image.path contains 'images/telo' %}
-                    <div class="col"><div class="photo">
-                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                    </div></div>
-                {% endif %}
-            {% endfor %}
+            <!--            {% for image in site.static_files %}-->
+            <!--                {% if image.path contains 'images/telo' %}-->
+            <!--                    <div class="col"><div class="photo">-->
+            <!--                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />-->
+            <!--                    </div></div>-->
+            <!--                {% endif %}-->
+            <!--            {% endfor %}-->
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/telo/telo2.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/telo/telo3.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/telo/telo4.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/telo/telo5.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/telo/telo6.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/telo/telo8.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/telo/telo9.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/telo/telo11.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
         </div>
     </div>
 </section>
@@ -28,13 +53,15 @@ title: Galerie
     <div class="container">
         <h2>Maderoterapie obličeje</h2>
         <div class="row">
-            {% for image in site.static_files %}
-                {% if image.path contains 'images/oblicej' %}
-                    <div class="col"><div class="photo">
-                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                    </div></div>
-                {% endif %}
-            {% endfor %}
+            <div class="col-md-4">
+                <img src="./assets/images/oblicej/oblicej1.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/oblicej/oblicej2.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/oblicej/oblicej3.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
         </div>
     </div>
 </section>
@@ -43,13 +70,18 @@ title: Galerie
     <div class="container">
         <h2>Proměny</h2>
         <div class="row">
-            {% for image in site.static_files %}
-                {% if image.path contains 'images/promeny' %}
-                    <div class="col"><div class="photo">
-                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                    </div></div>
-                {% endif %}
-            {% endfor %}
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/promeny/promeny1.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/promeny/promeny3.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/promeny/promeny2.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/promeny/promeny4.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
         </div>
     </div>
 </section>
@@ -58,13 +90,30 @@ title: Galerie
     <div class="container">
         <h2>Zábaly</h2>
         <div class="row">
-            {% for image in site.static_files %}
-                {% if image.path contains 'images/zabaly' %}
-                    <div class="col"><div class="photo">
-                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                    </div></div>
-                {% endif %}
-            {% endfor %}
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/zabaly/zabaly1.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/zabaly/zabaly2.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/zabaly/zabaly3.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/zabaly/zabaly4.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/zabaly/zabaly5.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/zabaly/zabaly6.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/zabaly/zabaly7.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/zabaly/zabaly8.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
         </div>
     </div>
 </section>
@@ -73,13 +122,30 @@ title: Galerie
     <div class="container">
         <h2>Salon</h2>
         <div class="row">
-            {% for image in site.static_files %}
-                {% if image.path contains 'images/salon' %}
-                    <div class="col"><div class="photo">
-                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                    </div></div>
-                {% endif %}
-            {% endfor %}
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/salon/salon1.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/salon/salon3.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/salon/salon4.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/salon/salon5.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/salon/salon6.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/salon/salon7.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/salon/salon8.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <img src="./assets/images/salon/salon9.jpg" alt="image" class="img-fluid mx-auto mb-4 d-block"/>
+            </div>
         </div>
     </div>
 </section>
