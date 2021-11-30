@@ -150,6 +150,10 @@ a:hover:after, a:focus:after, a:active:after {
     font-weight: 400;
 }
 
+.font-bold {
+    font-weight: 600;
+}
+
 .check-list li {
     display: block;
     margin-left: 18px;
@@ -443,11 +447,29 @@ nav.shrink a {
 #intro {
     height: 100vh;
     min-height: 560px;
-    background-image: url("images/intro_m.jpg");
+    background-image: url("images/intro2.jpg");
    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+}
+
+
+
+#intro.sluzby {
+    background-image: url("images/intro3.jpg");
+}
+
+#intro.galerie {
+    background-image: url("images/intro4.jpg");
+}
+
+#intro.omne {
+    background-image: url("images/intro_l.jpg");
+}
+
+#intro.cenik {
+    background-image: url("images/intro5.jpg");
 }
 
 #intro:before {
@@ -463,6 +485,7 @@ nav.shrink a {
 
 }
 
+/*
 @media only screen and (min-width: 600px) {
     #intro {
         background-image: url("images/intro_sm.jpg");
@@ -483,12 +506,10 @@ nav.shrink a {
 
 @media only screen and (min-width: 1800px) {
     #intro {
-        background-image:
-            linear-gradient(to right,
-            white, rgba(0, 0, 0, 0.6)),
-            url("images/intro_xl.jpg");
+        background-image: url("images/intro_xl.jpg");
     }
 }
+*/
 
 #intro > .container {
     padding-top: 30vh;
@@ -682,11 +703,22 @@ address i.fa {
 .follow .fa {
     color: #333;
     font-size: 3rem;
-    padding: 20px;
+    padding: 20px 20px 0;
 }
 
-.follow .fa:hover {
+.follow a:hover, .follow a:hover .fa {
     color: white;
+}
+
+.phone .fa {
+    position: relative;
+    bottom: -10px;
+    transition: all 0.15s ease-in-out;
+}
+
+.follow a:hover {
+    color: white;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 767px) {
@@ -703,6 +735,10 @@ address i.fa {
 footer {
     padding: 1rem 0;
     font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: underline;
 }
 
 /* PRINT CSS */
