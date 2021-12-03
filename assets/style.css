@@ -226,7 +226,6 @@ section:focus {
 }
 
 .card {
-    webkit-box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
     border: 0;
     height: 100%;
@@ -355,6 +354,7 @@ nav .btn {
 }
 
 .shrink {
+    background-color: white;
     background-color: rgba(255,255,255, 0.9);
     border-bottom: 1px solid #F7D6E0;
 }
@@ -430,7 +430,7 @@ nav.shrink a {
         left: 0;
         right: 0;
         margin: auto;
-        width: 0%;
+        width: 0;
         content: '.';
         color: transparent;
         height: 1px;
@@ -461,15 +461,14 @@ nav.shrink a {
 
 #intro:before {
     content: "";
-     background-color: rgba(255,255,255, 0.85);
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.75;
-      min-height: 560px;
-
+    background-color: rgba(255,255,255, 0.85);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+    min-height: 560px;
 }
 
 @media only screen and (min-width: 600px) {
