@@ -454,7 +454,7 @@ nav.shrink a {
     position: relative;
 }
 
-#intro.omne {
+#intro.about {
     background-image: url("images/intro_katka.jpg");
     background-position: top;
 }
@@ -720,7 +720,8 @@ address i.fa {
     }
     address a:nth-child(2) {
        padding-bottom: 4rem;
-    }}
+    }
+}
 
 footer {
     padding: 1rem 0;
@@ -731,40 +732,15 @@ footer a {
     text-decoration: underline;
 }
 
-/* PRINT CSS */
-/* ============================================== */
-@media print {
-    header, footer {
-        display: none;
-    }
 
-    * {
-        color: black !important;
-    }
-
-    /* .d-print:after {
-        content: "Šetřme naši přírodu - nastavení neumožní přímo z prohlížeče vytisknout více než kontaktní údaje.";
-    } */
-}
-
-
-/* pricing */
+/* pricing subpage */
 .price-content {
     margin-bottom: 100px;
 }
-/*
-.price-mainheading {
-    font-size: 1.75rem;
-    color: #ED97C2;
-}
-
-.price-content:nth-child(2n) .price-mainheading {
-    color: #58D5EE;
-}
-*/
 
 .price-mainheading {
     font-size: 1.75rem;
+    line-height: normal;
 }
 
 .price-mainheading .border-bottom {
@@ -784,7 +760,7 @@ footer a {
     display: inline;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 476px) {
     .price-heading {
         max-width: 250px;
         margin: auto;
