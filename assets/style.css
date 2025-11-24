@@ -369,6 +369,7 @@ nav.shrink a {
 
 .shrink .btn {
     color: white;
+    display: block;
 }
 
 .shrink .btn:hover {
@@ -390,7 +391,6 @@ nav.shrink a {
 
     nav.shrink .btn {
         margin: 0.5rem 1rem;
-        display: block;
     }
 }
 
